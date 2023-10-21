@@ -1,1 +1,1 @@
-console.log('and were live');
+console.log('so far so good');
