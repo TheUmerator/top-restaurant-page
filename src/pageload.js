@@ -23,20 +23,23 @@ export function loadPage() {
     const siteNav = document.createElement('div');
     siteNav.classList.add('nav');
 
-    const navRes = document.createElement('div');
-    navRes.classList.add('res');
-    navRes.textContent = 'BOOK A RESERVATION';
-
     const navMenu = document.createElement('div');
     navMenu.classList.add('menu');
     navMenu.textContent = 'MENU';
+
+    const navRes = document.createElement('div');
+    navRes.classList.add('res');
+    navRes.textContent = 'RESERVATION';
+
+
 
     const navAbout = document.createElement('div');
     navAbout.classList.add('about');
     navAbout.textContent = 'ABOUT US';
 
-    siteNav.appendChild(navRes);
     siteNav.appendChild(navMenu);
+    siteNav.appendChild(navRes);
+
     siteNav.appendChild(navAbout);
 
     const siteContent = document.createElement('div');
@@ -49,7 +52,7 @@ export function loadPage() {
     siteContainer.appendChild(siteContent);
 
     // THESE TWO LINES CAUSE ERROR
-    const contentAnchor=document.getElementById('content');
+    const contentAnchor = document.getElementById('content');
     contentAnchor.appendChild(siteContainer);
 
     console.log("I AM CALLED FROM A SEP MODULE");
