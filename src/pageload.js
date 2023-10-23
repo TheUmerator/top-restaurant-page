@@ -1,4 +1,4 @@
-function loadPage() {
+export function loadPage() {
     const siteContainer = document.createElement('div');
     siteContainer.classList.add('site-container');
 
@@ -42,11 +42,17 @@ function loadPage() {
     const siteContent = document.createElement('div');
     siteContent.classList.add('content');
 
+    // siteContent.textContent='content goes here'
+
     siteContainer.appendChild(header);
     siteContainer.appendChild(siteNav);
     siteContainer.appendChild(siteContent);
 
-    console.log("THIS WORKS");
+    // THESE TWO LINES CAUSE ERROR
+    const contentAnchor=document.getElementById('content');
+    contentAnchor.appendChild(siteContainer);
+
+    console.log("I AM CALLED FROM A SEP MODULE");
 }
 
-export {loadPage};
+// export {loadPage,};
