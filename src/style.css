@@ -12,6 +12,7 @@
     /* outline: 1px solid palevioletred; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     height: 100%;
@@ -45,4 +46,8 @@ body {
 .tab:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+.selected {
+    font-weight:600;
 }
