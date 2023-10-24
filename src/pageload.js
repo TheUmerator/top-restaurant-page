@@ -24,6 +24,7 @@ export function loadPage() {
     siteNav.classList.add('nav');
 
     const navMenu = document.createElement('div');
+    // navMenu.href='';
     navMenu.classList.add('menu');
     navMenu.textContent = 'MENU';
 
@@ -36,6 +37,11 @@ export function loadPage() {
     const navAbout = document.createElement('div');
     navAbout.classList.add('about');
     navAbout.textContent = 'ABOUT US';
+
+    navMenu.classList.add('tab');
+    navRes.classList.add('tab');
+    navAbout.classList.add('tab');
+
 
     siteNav.appendChild(navMenu);
     siteNav.appendChild(navRes);

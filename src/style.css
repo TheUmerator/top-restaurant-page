@@ -9,7 +9,7 @@
     url(./nav-font.woff2);
 }
 * {
-    outline: 1px solid palevioletred;
+    /* outline: 1px solid palevioletred; */
     margin: 0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ body {
     align-items: center;
     
     color: white;
-    background-color: rgb(5, 5, 82);
+    background-color: rgb(2, 2, 53);
 }
 .title {
     gap: 1rem;
@@ -41,3 +41,8 @@ body {
     font-family: 'navFont';
 }
 
+
+.tab:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
