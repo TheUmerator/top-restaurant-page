@@ -51,7 +51,7 @@ export function loadPage() {
     const siteContent = document.createElement('div');
     siteContent.classList.add('content');
 
-    // siteContent.textContent='content goes here'
+    siteContent.textContent='content goes here'
 
     siteContainer.appendChild(header);
     siteContainer.appendChild(siteNav);

@@ -1,7 +1,7 @@
 console.log('so far so good');
-import {
-    loadPage
-} from "./pageload";
+import { loadPage } from './pageload';
+import { loadReservation } from './reservation';
+import { clearContent } from './clearContent';
 import './style.css';
 
 loadPage();
@@ -22,24 +22,23 @@ selectTab.forEach((tab) => {
             case 'menu':
                 console.log('1');
                 tab.classList.add('selected');
-                // tab.classList.remove('selected');
-                // Clear content
-                // Add new respective content
-                // tab.classList.add('selected');
+                clearContent();
+
                 break;
             case 'res':
                 console.log('2');
-                // tab.classList.remove('selected');
-                // Clear content
-                // Add new respective content
-                // tab.classList.add('selected');
+                clearContent();
+
+                loadReservation();
+
+                
                 break;
             case 'about':
                 console.log('3');
-                // tab.classList.remove('selected');
-                // Clear content
-                // Add new respective content
-                // tab.classList.add('selected');
+
+                clearContent();
+                
+
                 break;
         }
     })

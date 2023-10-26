@@ -9,7 +9,7 @@
     url(./nav-font.woff2);
 }
 * {
-    /* outline: 1px solid palevioletred; */
+    outline: 1px solid palevioletred;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
