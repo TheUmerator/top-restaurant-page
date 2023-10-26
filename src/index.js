@@ -2,6 +2,7 @@ console.log('so far so good');
 import { loadPage } from './pageload';
 import { loadReservation } from './reservation';
 import { clearContent } from './clearContent';
+import { loadAbout } from './about';
 import './style.css';
 
 loadPage();
@@ -37,7 +38,7 @@ selectTab.forEach((tab) => {
                 console.log('3');
 
                 clearContent();
-                
+                loadAbout();
 
                 break;
         }

@@ -52,5 +52,5 @@ export function loadReservation() {
     resForm.appendChild(availButton);
     siteContent.appendChild(resForm);
 
-
+    
 }
