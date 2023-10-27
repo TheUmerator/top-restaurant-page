@@ -4,6 +4,7 @@ import { loadReservation } from './reservation';
 import { clearContent } from './clearContent';
 import { loadAbout } from './about';
 import './style.css';
+import { loadMenu } from './menu';
 
 loadPage();
 
@@ -24,6 +25,7 @@ selectTab.forEach((tab) => {
                 console.log('1');
                 tab.classList.add('selected');
                 clearContent();
+                loadMenu();
 
                 break;
             case 'res':

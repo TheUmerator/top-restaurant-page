@@ -6,6 +6,8 @@ export function loadMenu() {
     let dinnerItems = ["Chicago-Style Deep Dish Pizza", "Carmy's Lemon Chicken Piccata", "Mikey's Beef Braciole"];
     let dessItems = ["Marcus's Chocolate Ganache Cake", "Marcus's Perfect Doughnut", "Carmy's Plum Gelée"];
 
+    let mealItems=[breakItems,brunchItems,dinnerItems,dessItems];
+
     let breakDesc = ["A delicate French omelette filled with Boursin cheese and topped with crushed sour cream and onion potato chips.",
         "Filipino-inspired breakfast sandwich with savory longanisa sausage, fried egg, melted American cheese, and crispy hash browns, on toasted English muffins"
     ];
@@ -20,6 +22,16 @@ export function loadMenu() {
         "The classic American dessert elevated with premium ingredients and house-made chocolate glaze. Served with chocolate mousse and fresh raspberries", 
         "A sweet and tart plum jelly with a chewy texture, served with compressed plums and plum wine syrup."];
 
-    // let mealRotation=[mealTypes][breakItems];
+    let mealDesc=[breakDesc,brunchDesc,dinnerDesc,dessDesc];
+    
+    // console.log(mealItems[0][1]);
+
+    for(let i=0;i<mealTypes.length;i++){
+        console.log(mealTypes[i]);
+        for(let j=0;j<mealItems[i].length;j++){
+            console.log(mealItems[i][j]);
+            console.log(mealDesc[i][j]);
+        }
+    }
 
     }
