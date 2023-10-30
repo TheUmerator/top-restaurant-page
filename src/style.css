@@ -51,3 +51,22 @@ body {
 .selected {
     font-weight:600;
 }
+
+.pageload{
+
+    background-image: url(./index-image.avif);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* width: 100%;
+    /* background-color: rgb(2, 2, 53); */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.pageload-img{
+    /* margin: auto; */
+    /* height: 80vh; */
+
+}

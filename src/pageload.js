@@ -1,3 +1,4 @@
+import pageLoadImage from './index-image.avif';
 export function loadPage() {
     const siteContainer = document.createElement('div');
     siteContainer.classList.add('site-container');
@@ -51,7 +52,18 @@ export function loadPage() {
     const siteContent = document.createElement('div');
     siteContent.classList.add('content');
 
-    siteContent.textContent='content goes here'
+
+    siteContent.classList.add('pageload');
+
+
+
+    // siteContent.textContent='content goes here'
+
+    // const indexPhoto=new Image();
+    // indexPhoto.src=pageLoadImage;
+    // indexPhoto.classList.add('pageload-img');
+
+    // siteContent.appendChild(indexPhoto);
 
     siteContainer.appendChild(header);
     siteContainer.appendChild(siteNav);
