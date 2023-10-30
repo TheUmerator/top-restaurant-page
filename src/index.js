@@ -9,16 +9,23 @@ import { loadMenu } from './menu';
 loadPage();
 
 const selectTab = document.querySelectorAll('.tab');
+const siteContainer = document.querySelector('.content');
 
 selectTab.forEach((tab) => {
     tab.addEventListener('click', () => {
-        // console.log('tab click');
+
         const currentTab = tab.classList[0];
         console.log(currentTab);
 
-        // if(tab.classList[2]=='selected'){
-        //     tab.classList
-        // }
+
+        if(siteContainer.classList.contains('pageload')){
+            siteContainer.classList.remove('pageload');
+        }
+
+        // DOESNT WORK THE WAY ITS SUPPOSED TO
+        if(tab.classList[2]==('selected')){
+            tab.classList.remove('selected');
+        }
 
         switch (currentTab) {
             case 'menu':
@@ -30,15 +37,15 @@ selectTab.forEach((tab) => {
                 break;
             case 'res':
                 console.log('2');
+                tab.classList.add('selected');
                 clearContent();
-
                 loadReservation();
 
                 
                 break;
             case 'about':
                 console.log('3');
-
+                tab.classList.add('selected');
                 clearContent();
                 loadAbout();
 
