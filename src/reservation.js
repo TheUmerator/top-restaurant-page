@@ -24,10 +24,12 @@ export function loadReservation() {
     const div1=document.createElement('div');
     const div2=document.createElement('div');
     const div3=document.createElement('div');
+    const div4=document.createElement('div');
 
     const nameInput=document.createElement('input');
     nameInput.setAttribute('type','text');
     nameInput.setAttribute('id','name');
+    nameInput.setAttribute('placeholder','Carmen Berzatto');
     const nameLabel=document.createElement('label');
     nameLabel.textContent='Name:';
     nameLabel.setAttribute('for','name');
@@ -39,6 +41,7 @@ export function loadReservation() {
     const numInput=document.createElement('input');
     numInput.setAttribute('type','number');
     numInput.setAttribute('id','number');
+    numInput.setAttribute('placeholder','773-555-0902')
     const numLabel=document.createElement('label');
     numLabel.textContent='Number:';
     numLabel.setAttribute('for','number');
@@ -59,14 +62,28 @@ export function loadReservation() {
     div3.appendChild(dateInput);
 
 
+    const guestInput=document.createElement('input');
+    guestInput.setAttribute('type','number');
+    guestInput.setAttribute('id','guest');
+    guestInput.setAttribute('min','1');
+    guestInput.setAttribute('max','150');
+
+    const guestLabel=document.createElement('label');
+    guestLabel.textContent='Guests:';
+    guestLabel.setAttribute('for','number');
+    // dateLabel.appendChild(dateInput);
+    div4.appendChild(guestLabel);
+    div4.appendChild(guestInput);
+
     const availButton=document.createElement('button');
     availButton.setAttribute('type','submit');
     availButton.textContent='Check for Availability';
-    
+    availButton.classList.add('res-btn');
     resForm.appendChild(div1);
 
     resForm.appendChild(div2);
     resForm.appendChild(div3);
+    resForm.appendChild(div4);
     resForm.appendChild(availButton);
     siteContent.appendChild(resForm);
 

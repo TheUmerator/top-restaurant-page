@@ -9,7 +9,7 @@
     url(./nav-font.woff2);
 }
 * {
-    /* outline: 1px solid palevioletred; */
+    outline: 1px solid palevioletred;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,19 +74,69 @@ body {
 .res-welcome{
     font-family: 'navFont';
     font-size: 4rem;
+    margin-bottom: 5rem;
 }
 
 
 
 label{
     display: inline-block;
-    width: 4rem;
+    width: 5rem;
 
 }
 input{
     appearance: none;
     width: 10rem;
     border: 2px solid rgb(2, 2, 53);
+    padding: 0.1rem 0.5rem;
     /* border-radius: 0.3rem; */
     /* border: none; */
+}
+
+input:focus{
+    /* background-color: red; */
+    border-radius: 0.3rem;
+}
+
+label,input, .res-btn{
+    font-family: 'navFont';
+}
+
+form>div{
+    padding-bottom: 0.5rem;
+}
+form{
+    display: inline-block;
+    border: 3px solid rgb(2, 2, 53);
+    border-radius: 0.5rem;
+
+    padding: 1rem;
+    /* margin: 0 auto; */
+}
+
+.content{
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.res-btn{
+    appearance: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+
+    border-radius: 0.5rem;
+    border: 4px solid rgb(2, 2, 53);
+    /* border-width: 4px; */
+    
+    text-transform:uppercase;
+
+    background-color: white;
+    color: rgb(2, 2, 53);
+}
+.res-btn:hover{
+    background-color: lightgrey;
+}
+.res-btn:focus{
+    color: white;
+    background-color: rgb(2, 2, 53);
 }
