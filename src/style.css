@@ -9,7 +9,7 @@
     url(./nav-font.woff2);
 }
 * {
-    outline: 1px solid palevioletred;
+    /* outline: 1px solid palevioletred; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -139,4 +139,32 @@ form{
 .res-btn:focus{
     color: white;
     background-color: rgb(2, 2, 53);
+}
+
+.menu-content{
+    /* background-color: rgb(2, 2, 53);
+    color: white; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+.meal{
+    /* width: 25%; */
+}
+.meal-type{
+    font-family: 'navFont';
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.meal-item{
+    text-decoration: underline;
+}
+.meal-desc{
+    font-style: italic;
+    /* text-align: justify; */
+    /* margin-bottom: 1rem; */
+}
+.dish{
+    /* border: 1px solid rgb(2, 2, 53); */
+    margin-bottom: 1rem;
 }

@@ -77,7 +77,7 @@ export function loadReservation() {
 
     const availButton=document.createElement('button');
     availButton.setAttribute('type','submit');
-    availButton.textContent='Check for Availability';
+    availButton.textContent='Check Availability';
     availButton.classList.add('res-btn');
     resForm.appendChild(div1);
 

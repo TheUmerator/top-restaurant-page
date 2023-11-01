@@ -1,6 +1,8 @@
 export function loadMenu() {
     const siteContent=document.querySelector('.content');
 
+    const menu=document.createElement('div');
+    menu.classList.add('menu-content');
     let mealTypes = ['Breakfast', 'Brunch', 'Dinner', 'Dessert'];
 
     let breakItems = ["Sydney's Omlette", "Longanisa Breakfast Sandwich with Hash Browns"];
@@ -49,16 +51,22 @@ export function loadMenu() {
             mDesc.textContent=mealDesc[i][j];
             mDesc.classList.add('meal-desc');
 
-
+            const dish=document.createElement('div');
+            dish.classList.add('dish');
             // console.log(mealItems[i][j]);
             // console.log(mealDesc[i][j]);
 
-        meal.appendChild(mItem);
-        meal.appendChild(mDesc);
+            
+        // meal.appendChild(mItem);
+        // meal.appendChild(mDesc);
+        dish.appendChild(mItem);
+        dish.appendChild(mDesc);
 
-        siteContent.appendChild(meal);
+        meal.appendChild(dish);
+
+        menu.appendChild(meal);
         }
         
     }
-
+    siteContent.appendChild(menu);
     }
