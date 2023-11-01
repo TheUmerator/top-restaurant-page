@@ -168,3 +168,30 @@ form{
     /* border: 1px solid rgb(2, 2, 53); */
     margin-bottom: 1rem;
 }
+
+.about-welcome{
+    font-family: 'navFont';
+    font-size: 4rem;
+    /* margin-bottom: 4rem; */
+
+    text-align: left;
+    padding: 1rem;
+}
+
+.about-bottom{
+    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    margin: 0 1rem 1rem;
+    
+
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+p{
+    margin-bottom: 1rem;
+    font-family: 'navFont';
+}

@@ -20,12 +20,29 @@ export function loadAbout(){
     
     const aboutPhoto=new Image();
     aboutPhoto.src=resDrawing;
-        
+    
+    const aboutText=document.createElement('div');
+    aboutText.classList.add('about-text');
+
+    const aboutBottom=document.createElement('div')
+    aboutBottom.classList.add('about-bottom')
+    
+
+    aboutText.appendChild(aboutPara1);
+    aboutText.appendChild(aboutPara2);
+    aboutText.appendChild(aboutPara3);
+
+    aboutBottom.appendChild(aboutText);
+    aboutBottom.appendChild(aboutPhoto);
+
     siteContent.appendChild(welcomeDialog);
-    siteContent.appendChild(aboutPara1);
-    siteContent.appendChild(aboutPara2);
-    siteContent.appendChild(aboutPara3);
-    siteContent.appendChild(aboutPhoto);
+    siteContent.appendChild(aboutBottom);
+
+    // siteContent.appendChild(aboutPara1);
+    // siteContent.appendChild(aboutPara2);
+    // siteContent.appendChild(aboutPara3);
+
+    // siteContent.appendChild(aboutPhoto);
 
 
 }
