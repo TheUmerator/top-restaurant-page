@@ -9,10 +9,16 @@ import { loadMenu } from './menu';
 loadPage();
 
 const selectTab = document.querySelectorAll('.tab');
+const menuTab=document.querySelector('.menu');
+const resTab=document.querySelector('.res');
+const aboutTab=document.querySelector('.about');
 const siteContainer = document.querySelector('.content');
 
 selectTab.forEach((tab) => {
     tab.addEventListener('click', () => {
+
+        // if(selectTab.classList.contains('selected'))
+        tab.classList.remove('selected');
 
         const currentTab = tab.classList[0];
         console.log(currentTab);
@@ -30,6 +36,13 @@ selectTab.forEach((tab) => {
         switch (currentTab) {
             case 'menu':
                 console.log('1');
+                // I wish I knew a cleaner way to do this
+                if(resTab.classList.contains('selected')){
+                    resTab.classList.remove('selected')
+                }
+                if(aboutTab.classList.contains('selected')){
+                    aboutTab.classList.remove('selected')
+                }
                 tab.classList.add('selected');
                 clearContent();
                 loadMenu();
@@ -37,6 +50,12 @@ selectTab.forEach((tab) => {
                 break;
             case 'res':
                 console.log('2');
+                if(menuTab.classList.contains('selected')){
+                    menuTab.classList.remove('selected')
+                }
+                if(aboutTab.classList.contains('selected')){
+                    aboutTab.classList.remove('selected')
+                }
                 tab.classList.add('selected');
                 clearContent();
                 loadReservation();
@@ -45,6 +64,12 @@ selectTab.forEach((tab) => {
                 break;
             case 'about':
                 console.log('3');
+                if(resTab.classList.contains('selected')){
+                    resTab.classList.remove('selected')
+                }
+                if(menuTab.classList.contains('selected')){
+                    menuTab.classList.remove('selected')
+                }
                 tab.classList.add('selected');
                 clearContent();
                 loadAbout();
